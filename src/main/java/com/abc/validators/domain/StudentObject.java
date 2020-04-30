@@ -3,11 +3,11 @@ package com.abc.validators.domain;
 import com.abc.validators.annotation.Valid;
 
 @Valid(Restriction.class)
-public class BusinessObject extends Tuple {
+public class StudentObject extends Tuple {
 
     private int age;
 
-    public BusinessObject(int age) {
+    public StudentObject(int age) {
         this.age = age;
     }
 
