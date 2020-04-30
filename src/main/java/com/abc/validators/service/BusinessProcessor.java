@@ -7,7 +7,6 @@ import com.abc.validators.domain.Tuple;
 public class BusinessProcessor {
     public void process(Tuple anObject) {
         Valid valid = anObject.getClass().getAnnotation(Valid.class);
-        System.out.println(valid);
         if (valid != null) {
             Class restrictionClass =  valid.value();
             try {
